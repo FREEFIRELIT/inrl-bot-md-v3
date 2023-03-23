@@ -30,6 +30,7 @@ const button = {
 │⬡ 𝙋𝙧𝙚𝙛𝙞𝙭 𝘽𝙤𝙩 : ⌜  *${perfix}*  ⌟
 │⬡ 𝙉𝙖𝙢𝙚𝘽𝙤𝙩 : ${BOT_INFO.split(',')[0]}
 │⬡ 𝙐𝙨𝙚𝙧 : ${message.client.pushName}
+│⬡ 𝙊𝙬𝙣𝙚𝙧 : 𝘿𝙊𝙈𝙄𝙉𝘼𝙏𝙊𝙍-𝙓𝘿
 │⬡ 𝙇𝙞𝙗 : 𝘽𝙖𝙞𝙡𝙚𝙮𝙨
 ╰─❒`,
         footer: FOOTER,
@@ -116,7 +117,7 @@ inrl(
   async (message, client) => {
     let {FOOTER,BOT_INFO,PREFIX,GIT}=await getVar();
     let perfix  = PREFIX == 'false' ? '' : PREFIX;
-      const response = await got("https://api.github.com/repos/inrl-official/inrl-bot-md")
+      const response = await got("https://api.github.com/repos/DOMINATOR-XD/inrl-bot-md")
       const json = JSON.parse(response.body);
       let captIon = `╭═══〘${BOT_INFO.split(",")[0]}〙═══⊷❍
 ┃☯︎╭──────────────
@@ -191,7 +192,7 @@ bots.commands.map((command) => {
   let mension = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": ""}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: await getBuffer(ppuser), surface: 200, message: BOT_INFO.split(',')[0], orderTitle: BOT_INFO.split(',')[1], sellerJid: client.user.jid }}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
   let prefix  = PREFIX == 'false' ? '' : PREFIX;
   const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
-            + 'VERSION:3.0\n' 
+            + 'VERSION:1.0\n' 
             + 'FN:'+BOT_INFO.split(",")[0]+'\n' // full name
             + 'ORG:'+FOOTER+';\n' // the organization of the contact
             + 'TEL;type=CELL;type=VOICE;waid='+OWNER+':'+OWNER+'\n' // WhatsApp ID + phone number
