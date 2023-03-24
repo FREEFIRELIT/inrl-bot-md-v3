@@ -10,7 +10,7 @@
 
 - To use This bot you need fork this repository<br>
 
-[Click Here To Fork](https://github.com/inrl-official/inrl-bot-md/fork)
+[Click Here To Fork](https://github.com/DOMINATOR-XD/inrl-bot-md/fork)
 
 ## `⨷ SCAN QR`
 
